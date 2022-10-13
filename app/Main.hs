@@ -17,7 +17,6 @@ main = do
     msg <- new Gtk.Label [#label := "Hello"]
     #add box msg
     btn <- new Gtk.Button [#label := "Click me!"]
-    #add box btn
     #packStart box btn False False 10
     on btn #clicked (set msg [#label := "Clicked!"])
     #showAll win
